@@ -6613,17 +6613,10 @@ textarea {
 /* News Styles */
 
 section.press-container {
-  width: 100%;
+  width: 65%;
   margin: 0 auto;
 }
 
-.article-content {
-  width: 70%;
-}
-
-.page-options {
-  width: 30%;
-}
 
 .section-subtitle {
   color: #ffffff;
@@ -6637,11 +6630,13 @@ section.press-container {
 
 .news-menu {
   list-style: none;
-
+  width: 100%;
+  margin: 0 auto;
 
 }
 
 .news-menu__list {
+
   display: flex;
   gap: 30px;
   margin-bottom: 60px;
@@ -6747,12 +6742,18 @@ section.press-container {
   margin-top: 0;
   cursor: pointer;
 
+
+}
+
+.news-posts .news-item {
+  height: 240px;
 }
 
 .news-posts__list .news-item {
-  background-color: #ffffff1a;
+  background-color: #ffffff0a;
   border-radius: 0 0 10px 10px;
   transition: all 300ms;
+  padding: 0 0 10px 0;
 }
 
 .news-item:hover .news-item__title {
@@ -6766,7 +6767,7 @@ section.press-container {
 }
 
 .news-item .news-item__title {
-
+  margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.6;
@@ -6775,7 +6776,7 @@ section.press-container {
 
 
 
-.news-item a {
+.news-posts .news-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6789,14 +6790,20 @@ section.press-container {
 }
 
 section.article-container {
+  width: 65%;
+  max-width: 900px;
   display: flex;
-  gap: 60px;
+  flex-direction: column;
   margin: 0 auto;
+  gap: 60px;
+}
+
+.article-container .section-subtitle {
+  font-size: 30px;
 }
 
 .news-posts__list {
   display: flex;
-  flex-direction: column;
   list-style: none;
   gap: 30px;
   display: flex;
@@ -6815,6 +6822,7 @@ section.article-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 10px;
 }
 
 .news-title {
@@ -6839,18 +6847,20 @@ section.article-container {
 }
 
 .news-image img {
+  display: block;
   width: 100%;
   height: 300px;
   background-color: #131325;
   border-radius: 20px;
   padding: 50px;
+  margin-bottom: 60px;
 }
 
 .news-content {
   padding: 30px;
   background-color: #131325;
   width: 100%;
-  margin-bottom: 30px;
+
   border-radius: 20px;
   overflow: hidden;
 }
@@ -6911,6 +6921,12 @@ section.article-container {
   font-size: 43px;
 }
 
-.page-options .news-item {
-  background-color: transparent;
+
+div.press-list .news-item {
+  height: fit-content;
+}
+
+div.press-list .news-item a {
+  height: fit-content;
+  justify-content: inherit;
 }
